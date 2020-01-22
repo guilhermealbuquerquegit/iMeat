@@ -370,5 +370,104 @@
       "restaurantId": "tasty-treats"
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "address": "Rua Professor Paulo Freire",
+      "number": "1",
+      "optional": "123",
+      "paymentOptions": "DEB",
+      "orderItems": [
+        {
+          "quantity": 3,
+          "menuId": "cup-cake"
+        },
+        {
+          "quantity": 2,
+          "menuId": "donut"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "address": "Rua Professor Paulo Freire",
+      "number": "12",
+      "optional": "12",
+      "paymentOptions": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "donut"
+        },
+        {
+          "quantity": 1,
+          "menuId": "cup-cake"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "address": "Rua Professor Paulo Freire",
+      "number": "12",
+      "optional": "12",
+      "paymentOptions": "MON",
+      "orderItems": [
+        {
+          "quantity": 2,
+          "menuId": "cup-cake"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "address": "Rua Professor Paulo Freire",
+      "number": "12",
+      "optional": "",
+      "paymentOptions": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "cup-cake"
+        },
+        {
+          "quantity": 1,
+          "menuId": "donut"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "address": "Rua Professor Paulo Freire",
+      "number": "12",
+      "optional": "",
+      "paymentOptions": "MON",
+      "orderItems": [
+        {
+          "quantity": 2,
+          "menuId": "capp"
+        },
+        {
+          "quantity": 1,
+          "menuId": "espreso"
+        }
+      ],
+      "id": 5
+    },
+    {
+      "address": "Rua Professor Paulo Freire",
+      "number": "12",
+      "optional": "",
+      "paymentOptions": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "cup-cake"
+        },
+        {
+          "quantity": 1,
+          "menuId": "donut"
+        }
+      ],
+      "id": 6
+    }
+  ]
 }
