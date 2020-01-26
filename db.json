@@ -521,6 +521,34 @@
         }
       ],
       "id": 9
+    },
+    {
+      "name": "Guilherme",
+      "email": "guilherme@gmail.com",
+      "emailConfirmation": "guilherme@gmail.com",
+      "address": "rua professor paulo freire ",
+      "number": "09",
+      "optional": "Jangurussu",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "burger"
+        },
+        {
+          "quantity": 1,
+          "menuId": "fries"
+        },
+        {
+          "quantity": 1,
+          "menuId": "starb"
+        },
+        {
+          "quantity": 1,
+          "menuId": "cake"
+        }
+      ],
+      "id": 10
     }
   ]
 }

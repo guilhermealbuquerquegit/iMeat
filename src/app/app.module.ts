@@ -5,6 +5,8 @@ import { RouterModule, PreloadAllModules } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
+import { HttpClientModule } from '@angular/common/http';
+
 import { ROUTES } from './app.routes'
 
 import { AppComponent } from './app.component';
@@ -21,6 +23,7 @@ import { OrderSumaryComponent } from './order-sumary/order-sumary.component';
 import { SnackbarComponent } from './shared/messages/snackbar/snackbar.component';
 import { SharedModule } from './shared/shared.module';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { LoginComponent } from './security-frontend/login/login.component';
 
 
 @NgModule({
@@ -37,7 +40,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     ReviewsComponent,
     OrderSumaryComponent,
     SnackbarComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
