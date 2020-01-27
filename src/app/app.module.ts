@@ -4,7 +4,7 @@ import { HttpModule } from '@angular/http';
 import { RouterModule, PreloadAllModules } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-
+import { HttpClientModule } from '@angular/common/http';
 
 import { ROUTES } from './app.routes'
 
@@ -47,6 +47,7 @@ import { LoginComponent } from './security-frontend/login/login.component';
     BrowserAnimationsModule,
     SharedModule.forRoot(),
     HttpModule,
+    HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
     RouterModule.forRoot(ROUTES, {preloadingStrategy: PreloadAllModules})
