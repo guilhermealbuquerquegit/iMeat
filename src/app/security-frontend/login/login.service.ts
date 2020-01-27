@@ -1,14 +1,14 @@
 import { Injectable } from "@angular/core";
-import { HttpClient } from '@angular/common/http';
 import { Observable } from "rxjs/Observable";
 import { iMeat_API } from "app/app.api";
 import { User } from "./user.model";
+import { Http } from "@angular/http";
 
 @Injectable()
 export class LoginService {
-    constructor(private http:  HttpClient) {}
+    constructor(private http:  Http) {}
 
-    login(email: string, password: string): Observable<User> {
-        return this.http.post<User>(`${iMeat_API}/login`, {email: email, password: password})
+    login(email: string, password: string): Observable<any> {
+        return this.http.post(`${iMeat_API}/login`, {email: email, password: password})
     }
 }
