@@ -10,6 +10,11 @@ export class LoggedInGuard implements CanLoad {
 
     canLoad(route: Route): boolean {
         const loggedIn = this.loginService.isLoggedIn()
+        if (!loggedIn) {
+            this.loginService.handleLogin()
+        } else {
+            
+        }
         return loggedIn
     }
 }

@@ -16,13 +16,15 @@ import { LoggedInGuard } from 'app/security-frontend/LoggedInGuard'
 @NgModule({
     declarations: [InputComponent, RatingComponent, RadioComponent],
     imports: [CommonModule, FormsModule, ReactiveFormsModule],
-    exports: [InputComponent, RatingComponent, RadioComponent, CommonModule, FormsModule, ReactiveFormsModule]
+    exports: [InputComponent, RatingComponent, RadioComponent, 
+              CommonModule, FormsModule, ReactiveFormsModule]
 })
 export class SharedModule {
     static forRoot(): ModuleWithProviders {
         return {
             ngModule: SharedModule,
-            providers:[ShoppingCartService, RestaurantsService, OrderService, NotificationService, LoginService, LoggedInGuard]
+            providers:[ShoppingCartService, RestaurantsService, OrderService, 
+                       NotificationService, LoginService, LoggedInGuard]
         }
     }
 }
