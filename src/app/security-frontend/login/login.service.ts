@@ -8,7 +8,7 @@ import { Router } from "@angular/router";
 @Injectable()
 export class LoginService {
     user: User
-    constructor(private http:  HttpClient, private router: Router) {}
+    constructor(private http: HttpClient, private router: Router) {}
 
     isLoggedIn(): boolean {
          return this.user !== undefined
@@ -19,7 +19,7 @@ export class LoginService {
                         .do(user => this.user = user)
     }
 
-    handleLogin() {
-        this.router.navigate(['/login'])
+    handleLogin(path: string) {
+        this.router.navigate(['/login', path])
     }
 }

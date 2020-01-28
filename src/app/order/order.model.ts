@@ -1,4 +1,5 @@
  class Order {
+     [id: string]: any;
     constructor(
         public address: string,
         public number: number,

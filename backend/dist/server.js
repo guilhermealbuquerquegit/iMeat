@@ -23,5 +23,5 @@ var options = {
     key: fs.readFileSync("./backend/keys/key.pem")
 };
 https.createServer(options, server).listen(3000, function () {
-    console.log('JSON Server is running');
+    console.log('JSON Server is running https://localhost:3000');
 });

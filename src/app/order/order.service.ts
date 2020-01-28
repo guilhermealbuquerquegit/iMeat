@@ -1,12 +1,15 @@
 
 import { Injectable } from '@angular/core'
+import { HttpClient,  HttpHeaders } from '@angular/common/http'
+import { Observable } from 'rxjs/Observable'
+
+
 import { ShoppingCartService } from '../restaurant-detail/shopping-cart/shopping-cart.service'
 import { CartItem } from '../restaurant-detail/shopping-cart/cart-item.model'
 import { Order } from './order.model'
-import { Observable } from 'rxjs/Observable'
+
 import { iMeat_API } from 'app/app.api'
 import { LoginService } from 'app/security-frontend/login/login.service'
-import { HttpClient, HttpHeaders } from '@angular/common/http'
 
 
 
@@ -42,7 +45,6 @@ export class OrderService {
         if (this.loginService.isLoggedIn()) {
             headers = headers.set('Authorization', `Bearer ${this.loginService.user.accessToken}`)
         }
-        
         return this.http.post<Order>(`${iMeat_API}/orders`, order, {headers: headers})
                         .map(order => order.id)
     }

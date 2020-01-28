@@ -6,11 +6,10 @@ import * as jwt from 'jsonwebtoken'
 export const handleAuthorization = (req: Request, res: Response, next) => {
     const token = extractToken(req)
     if (!token) {
-        
         res.setHeader('WWW-Authenticate', 'Bearer token_type="JWT"')
         res.status(401).json({message: 'Você precisa se autenticar.'})
     } else {
-        jwt.verify(token, 'meat-api-password', (error, decoded) => {
+        jwt.verify(token, 'imeat-api-password', (error, decoded) => {
             if (decoded) {
                 next()
             } else {
