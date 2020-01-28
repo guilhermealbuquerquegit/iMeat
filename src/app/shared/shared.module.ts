@@ -13,6 +13,7 @@ import { OrderService } from "app/order/order.service";
 import { NotificationService } from './messages/notification.service'
 import { LoginService } from 'app/security-frontend/login/login.service'
 import { LoggedInGuard } from 'app/security-frontend/LoggedInGuard'
+import { LeaveOrderGuard } from '../order/leave-order.guard'
 @NgModule({
     declarations: [InputComponent, RatingComponent, RadioComponent],
     imports: [CommonModule, FormsModule, ReactiveFormsModule],
@@ -24,7 +25,7 @@ export class SharedModule {
         return {
             ngModule: SharedModule,
             providers:[ShoppingCartService, RestaurantsService, OrderService, 
-                       NotificationService, LoginService, LoggedInGuard]
+                       NotificationService, LoginService, LoggedInGuard, LeaveOrderGuard]
         }
     }
 }
